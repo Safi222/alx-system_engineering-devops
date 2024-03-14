@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Edit the hosts file making facebook.com resolves to 8.8.8.8
+# And localhost resolves to 127.0.0.2
+cp /etc/hosts ~/hosts.new
+sed -i 's/127.*localhost$/127.0.0.2\tlocalhost\n8.8.8.8 facebook.com/' ~/hosts.new
+cp -f ~/hosts.new /etc/hosts
