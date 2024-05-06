@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Loop from 1 to 100 and display each number
+# display "FizzBuzz" when the number is a multiple of 3 and 5
+# displays "Fizz" when the number is a multiple of 3
+# displays "Buzz" when the number is a multiple of 5
+
+for i in {1..100}
+do
+	if [ $((i % 15)) == "0" ]
+	then
+		echo "FizzBuzz"
+	elif [ $((i % 5)) == "0" ]
+	then
+		echo "Buzz"
+	elif [ $((i % 3)) == "0" ]
+	then
+		echo "Fizz"
+	else
+		echo $i
+	fi
+done
