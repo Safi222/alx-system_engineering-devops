@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Display "To infinity and beyond" and Handle SEGTERM, SIGQUIT
+# and SIGINT signal
+terminate()
+{
+	rm /var/run/myscript.pid
+	exit
+}
+echo "$$" > /var/run/myscript.pid
+while (true)
+do
+	echo "To infinity and beyond"
+	sleep 2
+	trap 'echo "I hate the kill command" && terminate' SIGTERM
+	trap 'terminate' SIGQUIT
+	trap 'echo "Y U no love me?!"' SIGINT
+done

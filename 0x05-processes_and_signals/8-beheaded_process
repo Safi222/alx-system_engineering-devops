@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Kill a process that is listening for SEGTERM
+pkill -KILL -f 7-highlander

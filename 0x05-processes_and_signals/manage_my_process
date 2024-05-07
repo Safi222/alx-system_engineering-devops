@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Write the message "I am alive!" to the file /tmp/my_process
+while (true)
+do
+	echo "I am alive!" | sudo tee -a /tmp/my_process > /dev/null
+	sleep 2
+done

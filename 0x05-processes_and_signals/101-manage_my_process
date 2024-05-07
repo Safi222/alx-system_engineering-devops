@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+# Manage the script in the file "manage_my_process"
+start()
+{
+	./manage_my_process &
+	echo $! | sudo tee /var/run/my_process.pid > /dev/null
+}
+
+stop()
+{
+	pkill -f /manage_my_process
+	sudo rm  /var/run/my_process.pid
+}
+
+if [ "$1" == "start" ]
+then
+	start
+	echo "manage_my_process started"
+elif [ "$1" == "stop" ]
+then
+	stop
+	echo "manage_my_process stopped"
+elif [ "$1" == "restart" ]
+then
+	stop
+	start
+	echo "manage_my_process restarted"
+else
+	echo "Usage: manage_my_process {start|stop|restart}"
+fi
