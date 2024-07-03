@@ -1,8 +1,7 @@
-reate a file in the tmp directory called school
-file { '/tmp/school':
-  ensure  => file,
+# Create a file /tmp/school
+file {'/tmp/school':
   mode    => '0744',
   owner   => 'www-data',
   group   => 'www-data',
-  content => 'I love Puppet'
+  content => 'I love Puppet',
 }
