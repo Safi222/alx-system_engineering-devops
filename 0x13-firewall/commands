@@ -1,0 +1,9 @@
+dvanced
+sudo ufw allow 8080
+sudo service ufw restart
+#didn't need
+sudo ufw enable
+
+#check
+sudo ufw status verbose
+#or without verbose
