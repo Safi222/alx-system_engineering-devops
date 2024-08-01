@@ -2,7 +2,9 @@
 
 
 """
-A Python script that, using this REST API
+A script that returns information
+about TODO list progress for an employee
+
 URL https://jsonplaceholder.typicode.com/
 
 Expected output:
