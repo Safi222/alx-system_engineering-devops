@@ -3,16 +3,16 @@
 
 
 """
-    A script that returns information
-    about TODO list progress for an employee
+A script that returns information
+about TODO list progress for an employee
 
-    URL https://jsonplaceholder.typicode.com/
+URL https://jsonplaceholder.typicode.com/
 
-    Expected output:
-        First line: Employee EMPLOYEE_NAME is done with tasks
-        (NUMBER_OF_DONE_TASKS/TOTAL_NUMBER_OF_TASKS):
-        Second and N next lines display the title of completed tasks:
-        TASK_TITLE (with 1 tabulation and 1 space before the TASK_TITLE)
+Expected output:
+    First line: Employee EMPLOYEE_NAME is done with tasks
+    (NUMBER_OF_DONE_TASKS/TOTAL_NUMBER_OF_TASKS):
+    Second and N next lines display the title of completed tasks:
+    TASK_TITLE (with 1 tabulation and 1 space before the TASK_TITLE)
 
 """
 
