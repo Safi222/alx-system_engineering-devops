@@ -1,4 +1,6 @@
-#!/user/bin/python3
+#!/usr/bin/python3
+
+
 """
 A Python script that, using this REST API
 URL https://jsonplaceholder.typicode.com/
@@ -10,6 +12,7 @@ Second and N next lines display the title of completed tasks:
 TASK_TITLE (with 1 tabulation and 1 space before the TASK_TITLE)
 
 """
+    
     if __name__ == "__main__":
         from json import loads
         from sys import argv
